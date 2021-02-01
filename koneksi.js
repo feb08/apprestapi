@@ -1,7 +1,7 @@
 var mysql = require('mysql');
 
 //Buat koneksi database
-const conn = mysql mysql.createConnection({
+const conn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
