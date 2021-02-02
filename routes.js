@@ -1,8 +1,11 @@
 'use strict';
 
-modules.exports = function(app) {
+module.exports = function(app) {
     var jsonku = require('./controller');
 
-    app.router('/')
+    app.route('/')
         .get(jsonku.index);
+
+    app.route('/tampil')
+        .get(jsonku.tampilsemuamahasiswa);
 }
